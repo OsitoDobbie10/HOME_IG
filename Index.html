@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Inicio GIS</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+video{
+    position:fixed;
+    min-width: 100%;
+    min-width: 100%;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+  .boton-header{
+      font-size: 100px;
+      color: white;
+
+  }
+
+  .cabezado{
+      top:0;
+      left:0;
+      width:550px;
+      height:100%;
+      background-color: darkorchid;  
+      display: none; 
+  }
+
+
+  header .data{
+      display: flex;
+      flex-direction:column;
+     align-items: center;
+     justify-content:center;
+  }
+
+   .data .lista-data li{
+      color:white;
+      text-decoration: none;
+      font-size:25px;
+      font-weight:200;
+      list-style: none;
+  }
+
+  .lista-data li a{
+      text-decoration:none;
+      color:white;
+      
+  }
+  .lista-data li a:hover{
+      background: white;
+      color:black;
+  }
+
+
+  .datos{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      color:white;
+  }
+
+  .encabezado .datos img{
+      width: 300px;
+      height: 300px;
+      border-radius: 30%;
+      margin-top:40px;
+  }
+
+  .encabezado .datos .titulo{
+      font-size: 75px;
+      color:black;
+      margin-top:50px;
+  }
+
+  .elementos{color:white;
+             font-size: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              width: 300px;
+              margin: 10px auto;}
+
+
+.botom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    color:white;
+}
+.botom a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 20px 400px 20px 400px;
+    font-size: 20px;
+}
+
+.botom a:hover{
+    background-color: black;
+    color:white;
+}
+
+.contenido{
+    margin: auto;
+    color:white;
+    font-size: 19px;
+    width: 90%;
+}
+
+.contenido .story-map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    color:white;
+}
+
+.contenido .story-map a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 20px 214px 20px 214px;
+    font-size: 20px;
+}
+.contenido .story-map a:hover{
+    background-color: black;
+    color:white;
+}
+.Informacion-storymap article h2{
+    text-align: center
+}
+.Informacion-storymap article p{
+    text-align: justify;
+
+}
+
+@media screen and (max-width:768px){
+
+
+  .encabezado{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+    .encabezado .datos img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+  
+    .encabezado .datos .titulo{
+        font-size: 30px;
+        color:white;
+    }
+
+    .elementos{
+        display: none;
+    }
+    .titulo p{
+        text-align:center;
+    }
+
+    .botom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:10px;
+        color:white;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .botom a{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        background: white;
+        padding: 10px 40px 10px 40px;
+        font-size: 15px;
+        font-weight:300;
+    }
+
+    .contenido{
+        margin-top: 20px;
+    }
+
+    .contenido .story-map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:20px;
+        color:white;
+        margin-bottom: 40px;
+    }
+    
+    .contenido .story-map a{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        background: white;
+        padding: 10px 10px 10px 10px;
+        font-size: 15px;
+        font-weight:300;
+        text-align: center;
+    }
+}
+    </style>
+    <video src="Mi video-1.mp4" autoplay loop muted></video> 
+    <div class="encabezado">
+        <div class="datos">
+           <!-- <img src="https://media-exp1.licdn.com/dms/image/C560BAQGFrs9P48C64A/company-logo_200_200/0/1519882612322?e=2147483647&v=beta&t=Sp2WsnVBYeunzNTUm6YdXIZbgjOUrjBxnLAA5Kpp5Nk" alt="IG">-->
+            <div class="contenedor-texto">
+                <h2 class="titulo">
+                <span class="typed"></span>
+                </h2> 
+                 <div class="titulo" id="cadenas-texto">
+                        <p><span>Bienvenido</span> <i class="mascota"> al panel de control. .</i></p>         
+                        <p><span>Experience</span> <i class="mascota">Builder</i></p>                   
+                </div>  
+               </div>
+        </div> 
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('.typed', {
+	/*strings: [
+		'<i class="mascota">Gato</i>',
+		'<i class="mascota">Perro</i>',
+		'<i class="mascota">Conejo</i>',
+		'<i class="mascota">Pez</i>',
+	],*/
+	stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+}); 
+    </script>
+</body>
+</html>
